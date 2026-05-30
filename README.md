@@ -34,5 +34,6 @@ the main repo. To ship a new version:
    values, then commit and push this repo.
 5. **Verify**: `brew update && brew install staffreview/tap/staff`.
 
-> The `sha256` values in the formula are placeholders until the first release
-> is published.
+> The `sha256` values in `Formula/staff.rb` match the **v0.1.0** binaries. They
+> only resolve once a `v0.1.0` release exists on `staffreview/staffreview` with
+> those exact assets uploaded.
