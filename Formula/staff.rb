@@ -1,24 +1,24 @@
 class Staff < Formula
-  desc "Staff Review — a local code review tool with AI-coding-agent skills"
+  desc "Staff Review \u2014 a local code review tool with AI-coding-agent skills"
   homepage "https://github.com/staffreview/staffreview"
-  version "1.4.0"
+  version "1.4.1"
   license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/staffreview/staffreview/releases/download/v#{version}/staff-darwin-arm64"
-      sha256 "5e853fad364a52e345bdc113d379e1fddb45b1759dee03a13a0aaabf6721dcce"
+      sha256 "6921e76ea9820439f562652e4ed809f4c90b184de6f5a61b59f740e183926285"
     else
       url "https://github.com/staffreview/staffreview/releases/download/v#{version}/staff-darwin-x64"
-      sha256 "a4a4d10e5ac57a4f228a9892d60a290aa55de387cf8a5c555734e84ac388ce1c"
+      sha256 "eac973080c187be2811f6e2e084f28f8dfc95ece69c50e3540fbcb9dfaa57c14"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/staffreview/staffreview/releases/download/v#{version}/staff-linux-arm64"
-      sha256 "dde5fc397d53f514584a8861dbd5f6791f71e8201fec956b0724cfaa62f1df39"
+      sha256 "96fa9d4c95f6891c58b5b2b45369552699fd2324cec4c6d2a13f182e9587bd00"
     else
       url "https://github.com/staffreview/staffreview/releases/download/v#{version}/staff-linux-x64"
-      sha256 "61d00236411fe312a2a8cd3004dc7a3f4e94f57def7e1777c9533fbbdf35c0dd"
+      sha256 "1872846c474807642b73e2da814a3507c7e2feb40300ec65853af315fb7df763"
     end
   end
 
